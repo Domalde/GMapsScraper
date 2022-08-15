@@ -27,7 +27,6 @@ class GMapsData:
                 address = self.get_address()
                 time.sleep(1)
                 tel = self.get_phone()
-                # TODO: Registrar em uma planilha
             else:
                 try:
                     self.navegador.find_element(By.XPATH, f'/html/body/div[3]/div[9]/div[23]/div[2]/div/div[1]/div/div[1]/div/div/div/div[2]/div[2]/div[{i}]').click()
@@ -37,7 +36,6 @@ class GMapsData:
                     address = self.get_address()
                     time.sleep(1)
                     tel = self.get_phone()
-                    # TODO: Registrar em uma planilha
                 except:
                     self.next_page()
 
